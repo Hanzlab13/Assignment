@@ -1,19 +1,32 @@
-Task 1: Scraping Data
+Scraping and Visualizing Used Car Data from Pakwheels
 
-You can use libraries like BeautifulSoup in Python to scrape data from classified websites like Pakwheels or OLX. Identify the website's structure, inspect elements to find relevant data, and use Python scripts to extract it.
+This Python script scrapes data from the Pakwheels website, specifically used car listings, and then visualizes the collected data using Matplotlib. It also creates a CSV file containing the scraped data for further analysis.
 
-Task 2: Creating a CSV file
+1-How it Works
 
-After scraping, organize the data into a structured format and save it as a CSV file using Python's built-in CSV module or pandas library.
+(a) Scraping Data: The script sends a GET request to the Pakwheels website's used car listings page and extracts relevant information such as car name, price, and mileage using BeautifulSoup.
 
-Task 3: Data Preprocessing
+(b) Creating CSV File: The scraped data is then stored in a CSV file named cars_data.csv using the pandas library.
 
-Clean the data by handling missing values, removing duplicates, standardizing formats, and converting data types if necessary. You can use libraries like pandas for this task.
+(c) Preprocessing Data: If needed, you can perform data preprocessing steps on the scraped data before visualization. However, in this example, no preprocessing is done.
 
-Task 4: Data Visualization
+(d) Visualizing Data: The script uses Matplotlib to create a scatter plot showing the relationship between car price and mileage.
 
-Use Matplotlib or Seaborn in Python to create visualizations like histograms, scatter plots, or bar charts to explore trends or relationships in the data. Alternatively, you can use tools like Power BI for interactive visualizations.
+2-Requirements
+*Python 3.x
+*requests
+*beautifulsoup4
+*pandas
+*matplotlib
 
-Task 5: Writing a Report
+3-How to Use
+.clone the repository or download the script scrape_and_visualize_cars.py.
 
-For each graph or analysis, provide a brief description of what the visualization shows and any insights or conclusions drawn from it. Include factors like price distribution, trends over time, or correlations between variables.
+.Install the required libraries using pip:
+
+pip install requests beautifulsoup4 pandas matplotlib
+
+.Run the script:
+python scrape_and_visualize_cars.py
+
+4-After execution, the script will generate a CSV file named 'cars_data.csv' and display a scatter plot showing the relationship between car price and mileage.
